@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS/JS Minifier</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1>
+        CSS/JS Minifier
+    </h1>
+    <textarea autocomplete="off" type="text" rows="20" maxlength="5000" autofocus spellcheck="true" id="content-target">
+    </textarea>
+    <button onclick="minify()">
+      Minify
+    </button>
+    <button onclick="document.getElementsByTagName('textarea')[1].select();document.execCommand('copy')">
+      Copy
+    </button>
+    <input id='file-input' type='file' multiple/>
+    <div id='file-list-display'></div>
+    <textarea autocomplete="off" type="text" rows="20" readonly="readonly">
+    </textarea>
+</body>
+
+</html>

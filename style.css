@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    background-image: url("./background.png");
+}
+
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient( 0deg, rgba(67, 5, 89, 1) 0%, rgba(232, 243, 13, 1) 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh black;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+img {
+    height: 3vw;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+a:first-of-type {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+    color: black;
+}
+
+button,
+input {
+    font-size: 2vw;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button:first-of-type,
+input:first-of-type {
+    float: left;
+}
+
+button:last-of-type,
+input:last-of-type {
+    float: right;
+}
+
+button:hover,
+input:hover {
+    background-color: black;
+    color: white;
+}
